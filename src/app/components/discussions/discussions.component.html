@@ -1,0 +1,14 @@
+<mat-list>
+  <mat-list-item *ngFor="let item of data?.data?.discussions">
+    <mat-icon class="avatar" mat-list-icon> <img src="assets/img/user_square.png" alt=""> </mat-icon>
+    <h4 mat-line class="listTitle"><b>{{item.userName}}</b> on <b>{{item.channel}}</b> - <span class="gray">{{item.date*1000 | timeAgo}}</span></h4>
+    <p style="padding: 5px 0" mat-line>{{item.message}}</p>
+    <div mat-line class="buttonContainer">
+      <div class="actionButtons" *ngFor="let b of buttons">
+        <mat-icon [ngStyle]="{'color': b.color}" mat-list-icon>{{b.icon}}</mat-icon>
+        {{b.name}}
+      </div>
+    </div>
+  </mat-list-item>
+  <mat-divider></mat-divider>
+</mat-list>

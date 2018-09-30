@@ -1,0 +1,22 @@
+
+<form (ngSubmit)="loginFn()" class="login-form" autocomplete="off"> 
+  <div class="logo"> <img src="assets/img/logo.PNG" alt=""> </div>
+  <h3>Hola!</h3>
+  <p class="gray">Ingresa con tus datos o crea una cuenta nueva</p>
+  <mat-form-field class="login-full-width">
+    <input matInput [(ngModel)]="userModel.email" name="email" placeholder="Correo electrónico" [required]="true">
+  </mat-form-field>
+  <mat-form-field class="login-full-width">
+    <input type="password" matInput [(ngModel)]="userModel.password" name="pass" placeholder="Contraseña" [required]="true">
+  </mat-form-field>
+  <div>
+    <p *ngIf="errMsg" class="errorMsg">{{errMsg}}</p>
+  </div>
+  <div>
+    <button type="submit" mat-button class="buttonForm full-button" [disabled]="disableButton">{{disableButton ?
+      'Verificando' : 'Ingresar'}}</button>
+  </div>
+  <hr style="border: none">
+  <hr style="border: none">
+  <p class="text-center gray">¿No tienes cuenta? <a class="blueColor" href="#">Crear cuenta</a></p>
+</form>

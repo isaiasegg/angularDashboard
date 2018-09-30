@@ -1,0 +1,75 @@
+.mat-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-full-width {
+    width: 100%;
+}
+
+mat-icon.searchIcon {
+    font-size: 16px !important;
+}
+
+mat-toolbar {
+    max-height: 80px;
+    min-height: 80px;
+    background: #ffffff;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.searchBar {
+    margin-top: 15px;
+}
+
+.toolbarCol {
+    border-right: 1px solid #e3e3e3;
+    margin-top: 10px;
+}
+
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    color: #51637f;
+}
+
+.iconButton {
+    min-width: 0;
+    padding: 0 5px;
+    outline: none;
+}
+
+.mat-list .mat-list-item .mat-list-icon{
+    width: 35px;
+    height: 35px;
+}
+
+button.mat-menu-item { 
+    outline: none !important;
+}
+
+.user{
+    cursor: pointer;
+}
+
+.notiCount {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    background: #d32a2a;
+    line-height: 19px;
+    border-radius: 500px;
+    color: #fff;
+    bottom: -3px;
+    right: -5px;
+    z-index: 9;
+    transform: scale(.8);
+}
+
+.mat-menu-panel {
+    width: 240px;
+}

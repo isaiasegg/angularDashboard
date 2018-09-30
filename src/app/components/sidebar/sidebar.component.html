@@ -1,0 +1,6 @@
+<mat-list role="list">
+  <mat-list-item class="sidebarItem" role="listitem" *ngFor="let item of data?.data?.sections" [class.active]="item === selectedItem" (click)="onSelect(item)">
+    <mat-icon class="sidebarIcon" mat-list-icon>{{getIcon(item.id_section)}}</mat-icon>
+    {{item.section_name}}
+  </mat-list-item>
+</mat-list>

@@ -1,0 +1,151 @@
+{
+    "status": "OK",
+	"response": 200,
+	"notifications_count": 3,
+	"userName": "Emilio Meneses",
+	"data": {
+		"sections": [{
+				"id_section": 1,
+				"section_name": "Inicio"
+			},
+			{
+				"id_section": 2,
+				"section_name": "Correos"
+			},
+			{
+				"id_section": 3,
+				"section_name": "Crear plantilla"
+			},
+			{
+				"id_section": 4,
+				"section_name": "Información"
+			},
+			{
+				"id_section": 5,
+				"section_name": "Data"
+			},
+			{
+				"id_section": 6,
+				"section_name": "Usuarios"
+			},
+			{
+				"id_section": 7,
+				"section_name": "Historial"
+			}
+		],
+		"users_data_graph": {
+			"start_date": 1532117547,
+			"end_date": 1537474347,
+			"current_month_data": [
+				40978,
+				4916,
+				11791,
+				38367,
+				42566,
+				24628,
+				40766,
+				2715,
+				2907,
+				35334,
+				6613,
+				14151,
+				31516,
+				45561,
+				1244,
+				34356,
+				18978,
+				21692,
+				24575,
+				19644,
+				23969,
+				28397,
+				17251,
+				33159,
+				24240,
+				30103,
+				29830,
+				43360,
+				36188,
+				5963
+			],
+			"past_month_data": [
+				19044,
+				38272,
+				11016,
+				9650,
+				3888,
+				2605,
+				22118,
+				34395,
+				21232,
+				29047,
+				4497,
+				36422,
+				3391,
+				32916,
+				38814,
+				15848,
+				34263,
+				31605,
+				1940,
+				4736,
+				15019,
+				4330,
+				40982,
+				3340,
+				49986,
+				49160,
+				37666,
+				48530,
+				28615,
+				4409
+			]
+		},
+		"users_by_device_graph": {
+			"total": 354590,
+			"desktop": 74320,
+			"iOS": 124256,
+			"Android": 156014
+		},
+		"discussions": [{
+				"channel": "Main",
+				"userName": "Felipe Gonzalez",
+				"message": "Test 1",
+				"date": 1537215147
+			},
+			{
+				"channel": "Main",
+				"userName": "Ricardo Valencia",
+				"message": "Test 2",
+				"date": 1536783147
+			},
+			{
+				"channel": "Main",
+				"userName": "José Jorquera",
+				"message": "Test 3",
+				"date": 1505074347
+			}
+		],
+		"top_referrals": [{
+				"referral_name": "Github",
+				"quantity": 20214
+			},
+			{
+				"referral_name": "StackOverflow",
+				"quantity": 15213
+			},
+			{
+				"referral_name": "nixcraft",
+				"quantity": 12321
+			},
+			{
+				"referral_name": "Youtube",
+				"quantity": 10321
+			},
+			{
+				"referral_name": "Forbes",
+				"quantity": 9341
+			}
+		]
+	}
+}

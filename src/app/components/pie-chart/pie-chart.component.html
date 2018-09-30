@@ -1,0 +1,4 @@
+<div style="display: block" *ngIf="data?.data?.users_by_device_graph?.desktop">
+  <canvas class="chart" [colors]="pieCharColors" baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="'pie'"
+    (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+</div>

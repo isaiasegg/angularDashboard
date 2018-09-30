@@ -1,0 +1,96 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- SIDEBAR -->
+    <div class="col-2 sidebar">
+      <div class="logo"><img src="assets/img/logo.PNG" alt=""></div>
+      <app-sidebar></app-sidebar>
+    </div>
+    <!-- MAIN -->
+    <div class="col-10">
+      <!--  -->
+      <div class="row bottomSpace">
+        <app-toolbar></app-toolbar>
+      </div>
+      <!--  -->
+      <div class="row bottomSpace">
+        <div class="col-8">
+          <mat-card>
+            <div class="cardHeader">
+              <h5>Users <mat-icon mat-list-icon class="drag">view_headline</mat-icon>
+              </h5>
+            </div>
+            <!--  -->
+            <app-line-chart></app-line-chart>
+          </mat-card>
+        </div>
+        <div class="col-4">
+          <mat-card>
+            <div class="cardHeader">
+              <h5>Users by device <mat-icon mat-list-icon class="drag">view_headline</mat-icon>
+              </h5>
+            </div>
+            <!--  -->
+            <app-pie-chart></app-pie-chart>
+            <!--  -->
+            <div class="cardFooter">
+              <button>Last week <mat-icon>unfold_more</mat-icon> </button>
+              <a href="#">View full report <mat-icon>arrow_forward</mat-icon></a>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+      <!--  -->
+      <div class="row bottomSpace">
+        <div class="col-4">
+          <mat-card>
+            <div class="cardHeader">
+              <h5>Nuevo mensaje <mat-icon mat-list-icon class="drag">view_headline</mat-icon>
+              </h5>
+            </div>
+            <form>
+              <mat-form-field class="input-full-width">
+                <input matInput placeholder="Titulo mensaje">
+              </mat-form-field>
+              <mat-form-field class="input-full-width">
+                <textarea matInput placeholder="Ingresa tu mensaje" rows="6"></textarea>
+              </mat-form-field>
+              <div>
+                <button type="submit" mat-button class="buttonForm full-button">Enviar mensaje</button>
+              </div>
+            </form>
+          </mat-card>
+        </div>
+        <div class="col-5">
+          <mat-card>
+            <div class="cardHeader">
+              <h5>Discussions <mat-icon mat-list-icon class="drag">view_headline</mat-icon>
+              </h5>
+            </div>
+            <!--  -->
+            <app-discussions></app-discussions>
+            <!--  -->
+            <div class="cardFooter">
+              <button>Last week <mat-icon>unfold_more</mat-icon> </button>
+              <a href="#">View full report <mat-icon>arrow_forward</mat-icon></a>
+            </div>
+          </mat-card>
+        </div>
+        <div class="col-3">
+          <mat-card>
+            <div class="cardHeader">
+              <h5>Top Referrals <mat-icon mat-list-icon class="drag">view_headline</mat-icon>
+              </h5>
+            </div>
+            <!--  -->
+            <app-referrals></app-referrals>
+            <!--  -->
+            <div class="cardFooter">
+              <button>Last week <mat-icon>unfold_more</mat-icon> </button>
+              <a href="#">View full report <mat-icon>arrow_forward</mat-icon></a>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

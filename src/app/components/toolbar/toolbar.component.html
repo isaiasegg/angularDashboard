@@ -1,0 +1,37 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+
+    <div class="toolbarCol col-9">
+      <mat-icon class="searchIcon" matSuffix>search</mat-icon>
+      <input type="text" matInput placeholder="Buscar...">
+    </div>
+    <div class="toolbarCol col-md-auto">
+      
+      <button mat-button class="iconButton">
+          <div class="notiCount">{{data?.notifications_count}}</div>
+        <mat-icon aria-label="Notifications">notifications</mat-icon>
+      </button>
+    </div>
+    <div class="toolbarCol col">
+      <mat-list>
+        <mat-list-item class="user" [matMenuTriggerFor]="appMenu">
+          <mat-icon style="font-size: 0;" mat-list-icon>
+            <img style="width: 100%" [src]="data?.picture ? data?.picture : 'assets/img/user.png'" alt="">
+          </mat-icon>
+          <p mat-line class="bold gray"> {{data?.userName}} </p>
+          <!--  -->
+          
+          <mat-icon class="arrowDown">keyboard_arrow_down</mat-icon>
+        </mat-list-item>
+      </mat-list>
+    </div>
+
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-menu #appMenu="matMenu">
+  <button mat-menu-item >Perfil</button> 
+  <button mat-menu-item >FAQ</button> 
+  <button mat-menu-item (click)="logout()" >Cerrar sesión</button> 
+</mat-menu>

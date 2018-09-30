@@ -1,0 +1,4 @@
+<div *ngIf="data?.data?.users_data_graph?.current_month_data.length > 0" style="display: block;">
+  <canvas baseChart class="chart" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+    [colors]="lineChartColors" [legend]="true" [chartType]="'line'" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+</div>

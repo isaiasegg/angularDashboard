@@ -1,0 +1,47 @@
+ 
+.container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -50;
+} 
+
+.logo img{
+    width: 100%;
+    margin-left: -13px;
+    margin: 15px 0 50px -13px;
+}
+
+form.login-form {
+    max-width: 350px;
+    width: calc(100vw - 60px);
+    padding: 30px;
+    margin: 5em auto 0 auto; 
+} 
+
+mat-form-field.login-full-width, button.buttonForm {
+    width: 100%;
+}  
+
+.errorMsg {
+    background: #e43e3e;
+    padding: 5px 10px 8px 10px;
+    width: calc(100% - 20px);
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.successMsg {
+    background: rgb(84, 194, 84);
+    padding: 5px 10px 8px 10px;
+    width: calc(100% - 20px);
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+}
+ 
